@@ -31,3 +31,6 @@ go.work.sum
 *.claude
 *.md
 !README.md
+
+# Reference files
+references/
