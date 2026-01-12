@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full antialiased">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santiago Gomez - Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gray-950': '#0a0e17',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="flex min-h-full flex-col bg-white dark:bg-gray-950">
+    <div class="flex min-h-screen">
+        <!-- Fixed Sidebar -->
+        <div class="relative flex-none overflow-hidden lg:pointer-events-none lg:fixed lg:inset-0 lg:z-40 lg:flex lg:px-0">
+            <!-- Glow Effect -->
+            <div class="absolute inset-0 -z-10 overflow-hidden bg-gray-950 lg:right-[calc(max(2rem,50%-38rem)+40rem)] lg:min-w-[32rem]">
+                <svg class="absolute -bottom-48 left-[-40%] h-[80rem] w-[180%] lg:top-[-40%] lg:-right-40 lg:bottom-auto lg:left-auto lg:h-[180%] lg:w-[112rem]" aria-hidden="true">
+                    <defs>
+                        <radialGradient id="glow-desktop" cx="100%">
+                            <stop offset="0%" stop-color="rgba(56, 189, 248, 0.3)" />
+                            <stop offset="53.95%" stop-color="rgba(0, 71, 255, 0.09)" />
+                            <stop offset="100%" stop-color="rgba(10, 14, 23, 0)" />
+                        </radialGradient>
+                        <radialGradient id="glow-mobile" cy="100%">
+                            <stop offset="0%" stop-color="rgba(56, 189, 248, 0.3)" />
+                            <stop offset="53.95%" stop-color="rgba(0, 71, 255, 0.09)" />
+                            <stop offset="100%" stop-color="rgba(10, 14, 23, 0)" />
+                        </radialGradient>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#glow-desktop)" class="hidden lg:block" />
+                    <rect width="100%" height="100%" fill="url(#glow-mobile)" class="lg:hidden" />
+                </svg>
+                <div class="absolute inset-x-0 right-0 bottom-0 h-px bg-white mix-blend-overlay lg:top-0 lg:left-auto lg:h-auto lg:w-px"></div>
+            </div>
+
+            <!-- Sidebar Content -->
+            <div class="relative flex w-full lg:pointer-events-auto lg:mr-[calc(max(2rem,50%-38rem)+40rem)] lg:min-w-[32rem] lg:overflow-y-auto lg:pl-[max(4rem,calc(50%-38rem))]">
+                <div class="mx-auto max-w-lg px-6 lg:mx-0 lg:flex lg:w-96 lg:max-w-none lg:flex-col lg:before:flex-1 lg:before:pt-6">
+                    <div class="pt-20 pb-16 sm:pt-32 sm:pb-20 lg:py-20">
+                        <div class="relative">
+                            <!-- Profile Section -->
+                            <div class="mb-8">
+                                <div class="h-24 w-24 rounded-full bg-gradient-to-br from-sky-400 to-blue-600 p-0.5">
+                                    <div class="h-full w-full rounded-full bg-gray-950 flex items-center justify-center">
+                                        <span class="text-4xl font-light text-sky-300">SG</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h1 class="font-light text-4xl/tight text-white">
+                                Santiago Gomez
+                            </h1>
+                            <p class="mt-2 text-xl text-sky-300">
+                                Software Engineer
+                            </p>
+                            <p class="mt-4 text-sm/6 text-gray-300">
+                                Building elegant solutions to complex problems. Passionate about clean code,
+                                scalable architecture, and creating delightful user experiences.
+                            </p>
+
+                            <!-- Contact Links -->
+                            <div class="mt-8 flex flex-col gap-3">
+                                <a href="mailto:your.email@example.com" class="group flex items-center gap-3 text-sm text-gray-400 hover:text-sky-300 transition">
+                                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                    <span>your.email@example.com</span>
+                                </a>
+                                <a href="https://github.com/yourusername" class="group flex items-center gap-3 text-sm text-gray-400 hover:text-sky-300 transition">
+                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    <span>github.com/yourusername</span>
+                                </a>
+                                <a href="https://linkedin.com/in/yourprofile" class="group flex items-center gap-3 text-sm text-gray-400 hover:text-sky-300 transition">
+                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                    <span>linkedin.com/in/yourprofile</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="flex flex-1 items-end justify-start pb-6 lg:pb-6">
+                        <p class="text-xs text-gray-500">
+                            © 2024 Santiago Gomez. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline Decoration -->
+        <div class="pointer-events-none absolute inset-0 z-50 overflow-hidden lg:right-[calc(max(2rem,50%-38rem)+40rem)] lg:min-w-[32rem] lg:overflow-visible">
+            <svg class="absolute top-0 left-[max(0px,calc(50%-18.125rem))] h-full w-1.5 lg:left-full lg:ml-1" aria-hidden="true">
+                <defs>
+                    <pattern id="timeline-pattern" width="6" height="8" patternUnits="userSpaceOnUse">
+                        <path d="M0 0H6M0 8H6" class="stroke-sky-900/10 dark:stroke-white/10" fill="none" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#timeline-pattern)" />
+            </svg>
+        </div>
+
+        <!-- Main Content -->
+        <div class="relative flex-auto">
+            <main class="space-y-20 py-20 sm:space-y-32 sm:py-32 px-6 lg:pl-[calc(max(2rem,50%-38rem)+42rem)] lg:pr-[max(2rem,calc(50%-38rem))]">
+
+                <!-- Experience Section -->
+                <section>
+                    <div class="max-w-3xl">
+                        <h2 class="text-sm font-semibold text-sky-400 mb-8 tracking-wide uppercase">Experience</h2>
+
+                        <div class="space-y-12">
+                            <!-- Experience Item -->
+                            <div class="relative pl-8 before:absolute before:left-0 before:top-2 before:h-3 before:w-3 before:rounded-full before:bg-sky-500 before:ring-4 before:ring-gray-950">
+                                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
+                                    <div>
+                                        <h3 class="text-lg font-medium text-white">Senior Software Engineer</h3>
+                                        <p class="text-sky-300">Company Name</p>
+                                    </div>
+                                    <time class="text-sm text-gray-400 whitespace-nowrap">2022 - Present</time>
+                                </div>
+                                <p class="text-sm text-gray-300 leading-relaxed">
+                                    Led development of scalable microservices architecture serving millions of users.
+                                    Implemented CI/CD pipelines reducing deployment time by 60%. Mentored junior developers
+                                    and established best practices for code review and testing.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="px-3 py-1 text-xs rounded-full bg-sky-500/10 text-sky-300 border border-sky-500/20">Go</span>
+                                    <span class="px-3 py-1 text-xs rounded-full bg-sky-500/10 text-sky-300 border border-sky-500/20">React</span>
+                                    <span class="px-3 py-1 text-xs rounded-full bg-sky-500/10 text-sky-300 border border-sky-500/20">PostgreSQL</span>
+                                    <span class="px-3 py-1 text-xs rounded-full bg-sky-500/10 text-sky-300 border border-sky-500/20">Docker</span>
+                                </div>
+                            </div>
+
+                            <!-- Add more experience items here -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects Section -->
+                <section>
+                    <div class="max-w-3xl">
+                        <h2 class="text-sm font-semibold text-sky-400 mb-8 tracking-wide uppercase">Projects</h2>
+
+                        <div class="grid gap-6 sm:grid-cols-2">
+                            <!-- Project Card -->
+                            <div class="group relative rounded-2xl bg-white/5 p-6 hover:bg-white/10 transition border border-white/10">
+                                <h3 class="text-lg font-medium text-white mb-2">Project Name</h3>
+                                <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                                    A brief description of what this project does and the problem it solves.
+                                </p>
+                                <div class="flex gap-4 text-sm">
+                                    <a href="#" class="text-sky-300 hover:text-sky-200 transition">
+                                        View Project →
+                                    </a>
+                                    <a href="#" class="text-gray-400 hover:text-gray-300 transition">
+                                        GitHub →
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Add more project cards here -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Skills Section -->
+                <section>
+                    <div class="max-w-3xl">
+                        <h2 class="text-sm font-semibold text-sky-400 mb-8 tracking-wide uppercase">Skills</h2>
+
+                        <div class="grid gap-8 sm:grid-cols-2">
+                            <div>
+                                <h3 class="text-base font-medium text-white mb-4">Languages & Frameworks</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 text-sm rounded-full bg-white/5 text-gray-300 border border-white/10">JavaScript/TypeScript</span>
+                                    <span class="px-3 py-1 text-sm rounded-full bg-white/5 text-gray-300 border border-white/10">Go</span>
+                                    <span class="px-3 py-1 text-sm rounded-full bg-white/5 text-gray-300 border border-white/10">React</span>
+                                    <span class="px-3 py-1 text-sm rounded-full bg-white/5 text-gray-300 border border-white/10">Node.js</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3 class="text-base font-medium text-white mb-4">Tools & Technologies</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 text-sm rounded-full bg-white/5 text-gray-300 border border-white/10">Docker</span>
+                                    <span class="px-3 py-1 text-sm rounded-full bg-white/5 text-gray-300 border border-white/10">Kubernetes</span>
+                                    <span class="px-3 py-1 text-sm rounded-full bg-white/5 text-gray-300 border border-white/10">PostgreSQL</span>
+                                    <span class="px-3 py-1 text-sm rounded-full bg-white/5 text-gray-300 border border-white/10">Git</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education Section -->
+                <section>
+                    <div class="max-w-3xl">
+                        <h2 class="text-sm font-semibold text-sky-400 mb-8 tracking-wide uppercase">Education</h2>
+
+                        <div class="space-y-8">
+                            <div class="relative pl-8 before:absolute before:left-0 before:top-2 before:h-3 before:w-3 before:rounded-full before:bg-sky-500 before:ring-4 before:ring-gray-950">
+                                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
+                                    <div>
+                                        <h3 class="text-lg font-medium text-white">Bachelor of Science in Computer Science</h3>
+                                        <p class="text-sky-300">University Name</p>
+                                    </div>
+                                    <time class="text-sm text-gray-400 whitespace-nowrap">2018 - 2022</time>
+                                </div>
+                                <p class="text-sm text-gray-300">
+                                    Graduated with honors. Relevant coursework in algorithms, data structures, and software engineering.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+</body>
+</html>
